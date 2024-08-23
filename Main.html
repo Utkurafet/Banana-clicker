@@ -1,1 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <title>banana clicker</title>
+</head>
+<body>
+  <p>Score: <span id="score">0</span></p>
+  <img src="Banana.png" height="140px" width="256px" onclick="addToScore(1)">
+</body>
+<script>
+  var score = 0;
+
+  function addToScore(amount) {
+    score = score + amount;
+    document.getElementById("score").innerHTML = score
+  }
+</script>
+</html>
